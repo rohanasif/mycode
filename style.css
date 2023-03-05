@@ -38,6 +38,11 @@ body {
     color: rgba(255, 255, 255, .5) !important;
 }
 
+.modal-btn>span>span:hover {
+    color: #00776d;
+    background-color: white;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -51,6 +56,10 @@ body {
 
     .headings {
         max-width: 540px;
+    }
+
+    .home-btn {
+        display: block !important;
     }
 }
 
