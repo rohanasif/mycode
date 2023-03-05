@@ -28,7 +28,40 @@ body {
 .overlay {
     background: linear-gradient(131deg, #0f5650, transparent);
     content: "";
+}
 
+.row {
+    align-items: center !important;
+}
+
+.para-1 {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .dialog {
+        min-height: calc(100% - 3.5rem);
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+
+    .headings {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .headings {
+        max-width: 720px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -63,6 +96,10 @@ body {
         max-width: 960px;
     }
 
+    .col {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
 
 }
 
@@ -79,28 +116,8 @@ body {
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .headings {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-
-    .dialog {
-        min-height: calc(100% - 3.5rem);
-        max-width: 500px;
-        margin: 1.75rem auto;
-    }
-
-    .headings {
-        max-width: 540px;
+@media(max-width: 576px) {
+    .home {
+        padding: 100px 0;
     }
 }
