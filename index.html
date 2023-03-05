@@ -14,24 +14,43 @@
 </head>
 
 <body class="text-[16px] text-[#252d31]">
-    <nav class="w-full bg-transparent py-[18px] flex items-center">
-        <div class="container flex items-center justify-between">
-            <a href="./index.html" class="py-[0.3125rem] box-border"><img class="h-[25px]" src="./images/logo-light.png"
+    <nav class="w-full bg-transparent py-[18px] flex items-center z-[999]">
+        <div class="container flex items-center justify-between w-full mx-auto">
+            <a href="./index.html" class="py-[0.3125rem] box-border"><img class="h-[25px]" src="./images/logo-dark.png"
                     alt=""></a>
             <i
-                class="fa-solid fa-bars text-2xl mt-[5px] mb-0 cursor-pointer py-1 px-3 leading-none bg-transparent rounded-[0.25rem] text-[#152c5c]"></i>
+                class="fa-solid fa-bars text-2xl mt-[5px] mb-0 cursor-pointer py-1 px-3 leading-none bg-transparent rounded-[0.25rem] text-[#152c5c] menu"></i>
             <div class="nav-div flex-grow items-center box-border">
                 <ul class="nav-ul mx-auto flex pl-0 my-0 box-border list-none">
-                    <li class="nav-item list-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item list-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item list-item"><a class="nav-link" href="#review">Review</a></li>
-                    <li class="nav-item list-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item list-item"><a class="nav-link" href="#contact">Contact</a></li>
-
+                    <li class="nav-item list-item"><a class="nav-link text-[14.5px] font-medium mx-[14px] px-4 py-2"
+                            href="#home">Home</a>
+                    </li>
+                    <li class="nav-item list-item"><a class="nav-link text-[14.5px] font-medium mx-[14px] px-4 py-2"
+                            href="#features">Features</a>
+                    </li>
+                    <li class="nav-item list-item"><a class="nav-link text-[14.5px] font-medium mx-[14px] px-4 py-2"
+                            href="#review">Review</a>
+                    </li>
+                    <li class="nav-item list-item"><a class="nav-link text-[14.5px] font-medium mx-[14px] px-4 py-2"
+                            href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item list-item"><a class="nav-link text-[14.5px] font-medium mx-[14px] px-4 py-2"
+                            href="#contact">Contact</a>
+                    </li>
                 </ul>
+                <button
+                    class="py-[7px] px-[25px] rounded-[50px] text-[13px] tracking-[1px] cursor-pointer bg-[#00776d] border-[1px] border-[#00776d] font-medium text-[white] m-0">Sign
+                    up</button>
             </div>
         </div>
     </nav>
+
+    <div class="main overflow-x-hidden box-border block ">
+        <section class="home py-[215px] relative box-border block">
+            <div class="overlay absolute top-0 left-0 w-full h-full box-border block"></div>
+            <div class="headings"></div>
+        </section>
+    </div>
 </body>
 
 </html>
