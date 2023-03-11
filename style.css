@@ -60,6 +60,25 @@ body {
     z-index: -1;
 }
 
+.feature-card:hover {
+    color: rgba(0, 119, 109, .9);
+}
+
+.feature-card:hover::before {
+    background-color: rgba(0, 119, 109, .2);
+    height: 100%;
+    width: 100%;
+}
+
+.li {
+    border-bottom: 1px solid rgba(0, 119, 109, .09);
+}
+
+.li:hover {
+    background: rgba(0, 119, 109, .2);
+    border-radius: 8px;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -80,6 +99,11 @@ body {
     .feature-card {
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
+    }
+
+    .marketing {
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
     }
 }
 
@@ -129,6 +153,20 @@ body {
     .col-lg-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .card {
+        margin-bottom: 0 !important;
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
     }
 }
 
