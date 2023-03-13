@@ -70,6 +70,22 @@ body {
     width: 100%;
 }
 
+.feature-heading::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 119, 109, .4);
+    height: 50px;
+    width: 50px;
+    bottom: -14px;
+    border-radius: 100% 38% 100% 51%/45% 49% 100% 100%;
+    z-index: -1;
+    transform: translateX(-50%);
+    height: 38px;
+    width: 38px;
+    bottom: 0px;
+    left: 15px;
+}
+
 .li {
     border-bottom: 1px solid rgba(0, 119, 109, .09);
 }
@@ -77,6 +93,21 @@ body {
 .li:hover {
     background: rgba(0, 119, 109, .2);
     border-radius: 8px;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0.25rem rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.bg-overlay-2 {
+    position: relative;
+    background: linear-gradient(rgba(37, 45, 49, 0.7), rgba(37, 45, 49, 0.7)), url(./images/cta.jpg) fixed no-repeat;
+    color: #fff;
 }
 
 @media (min-width: 576px) {
